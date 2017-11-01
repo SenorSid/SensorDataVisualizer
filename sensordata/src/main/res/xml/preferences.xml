@@ -7,11 +7,13 @@
             android:defaultValue="http://archive.luftdaten.info/"
             android:key="@string/pref_luftdata_url_key"
             android:singleLine="true"
+            android:summary="@string/pref_luftdata_url_value"
             android:title="Luftdata Info URL" />
         <ListPreference
             android:defaultValue="1"
             android:entries="@array/pref_sync_frequency_titles"
             android:entryValues="@array/pref_sync_frequency_values"
+            android:summary="%s"
             android:key="@string/pref_sync_frequency_key"
             android:title="@string/pref_sync_frequency_title" />
     </PreferenceCategory>
@@ -20,6 +22,7 @@
             android:inputType="number"
             android:title="@string/preference_sensorID_title"
             android:key="@string/preference_sensorID_key"
+            android:summary="@string/pref_sensorId_Value"
             android:text="@string/preference_sensorType_value" />
         <ListPreference
             android:key="@string/preference_sensorType_key"

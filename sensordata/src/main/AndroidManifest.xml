@@ -19,7 +19,7 @@
         </activity>
         <activity
             android:name=".SettingSensorDataActivity"
-            android:label="@string/title_activity_setting_sensor_data"
+            android:label="@string/pref_settings_title"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
