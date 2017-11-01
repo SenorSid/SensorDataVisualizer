@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/perf_luftdata_category_title">
+
+        <EditTextPreference
+            android:defaultValue="http://archive.luftdaten.info/"
+            android:key="@string/pref_luftdata_url_key"
+            android:singleLine="true"
+            android:title="Luftdata Info URL" />
+        <ListPreference
+            android:defaultValue="1"
+            android:entries="@array/pref_sync_frequency_titles"
+            android:entryValues="@array/pref_sync_frequency_values"
+            android:key="@string/pref_sync_frequency_key"
+            android:title="@string/pref_sync_frequency_title" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_Sensor_category_title">
+       <EditTextPreference
+            android:inputType="number"
+            android:title="@string/preference_sensorID_title"
+            android:key="@string/preference_sensorID_key"
+            android:text="@string/preference_sensorType_value" />
+        <ListPreference
+            android:key="@string/preference_sensorType_key"
+            android:title="@string/preference_sensor_title"
+            android:summary="%s"
+            android:entries="@array/preflist_sensorTypes_Entries"
+            android:entryValues="@array/preflist_sensorTypes_Entries_Values"
+            android:defaultValue="0" />
+    </PreferenceCategory>
+</PreferenceScreen>
